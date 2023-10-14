@@ -27,8 +27,8 @@
     </div>
 
     <div class="container" name="formulario_metas">
-      <form method="post" action="{% url 'calcular' %}">
-        {% csrf_token %}
+      <form method="post" action="{% url 'calcular' %}, {%csrf_token}">
+       # {% csrf_token %}
         <div class="mb-3">
           <label for="objetivo" class="form-label">Qual a seu objetivo?</label>
           <input type="text" class="form-control" name="objetivo" id="objetivo">
@@ -59,7 +59,7 @@
       <tbody>
         <tr>
           <td>Objetivo Final</td>
-          <td>{{ n1 }}</td>
+          <td>{n1}</td> #voltar para {{n1}}
         </tr>
         <tr>
           <td>Tempo estimado</td>
@@ -67,7 +67,7 @@
         </tr>
         <tr>
           <td>Valor mensal</td>
-          <td>{{n2}}</td>
+          <td>{n2}</td> #{{n2}}
         </tr>
       </tbody>
     </table>
