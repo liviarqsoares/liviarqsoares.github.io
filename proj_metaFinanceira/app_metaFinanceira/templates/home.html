@@ -27,8 +27,8 @@
     </div>
 
     <div class="container" name="formulario_metas">
-      <form method="post" action="{% url 'calcular' %}, {%csrf_token}">
-       # {% csrf_token %}
+      <form method="post" action="{% url 'calcular' %}">
+        {% csrf_token %}
         <div class="mb-3">
           <label for="objetivo" class="form-label">Qual a seu objetivo?</label>
           <input type="text" class="form-control" name="objetivo" id="objetivo">
