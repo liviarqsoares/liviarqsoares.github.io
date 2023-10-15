@@ -1,3 +1,4 @@
+//Script padrão de validação de campos do Bootstrap
 (function () {
     'use strict'
   
